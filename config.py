@@ -5,7 +5,7 @@ id_pattern = re.compile(r'^.\d+$')
 
 
 # Fetch initial admin list
-ADMIN = []  # TemporLoad admins when the bot starts
+ADMIN = [6175961504]  # TemporLoad admins when the bot starts
 
 TOKEN_VERIFY=False
 API = environ.get("API", "5a7508a173d6462e4cd4b723766b92541c389a6b") # shortlink api
@@ -17,15 +17,15 @@ USER_LIMIT_TIME = int(os.environ.get("USER_LIMIT_TIME", "1"))#enter time based o
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", " ")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "24526911")
+    API_HASH  = os.environ.get("API_HASH", "dd8607f8225996fb4f9cd6d59ffa98e0")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8843189045:AAGYOyouOOgL7ugXjJ70QlcW87m9AxIYdFg") 
 
     # database config
-    DB_NAME = os.environ.get("DB_NAME","")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Ritu")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://ram7318590:ram7318590@ritu.5pep7.mongodb.net/?appName=Ritu")
     PORT = os.environ.get("PORT", "8050")
-    OWNER = int(os.environ.get("OWNER", ""))
+    OWNER = int(os.environ.get("OWNER", "6175961504"))
     PRIVATE_USE = False #If Bot is private use set True otherwise False
  
     # other configs
@@ -33,7 +33,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://files.catbox.moe/ufzpkn.jpg")
     
     FORCE_SUB_CHANNELS = os.environ.get('FORCE_SUB_CHANNELS', "tech_freak_tamil").split(',')
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "" ))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1003915294304" ))
     DUMB_CHANNEL = os.environ.get("DUMB_CHANNEL", "")
     
     # wes response configuration     
